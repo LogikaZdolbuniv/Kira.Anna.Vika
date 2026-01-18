@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dyson Store | Premium Care</title>
+    <title>Dyson Premium | Pink Edition</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">DYSON</div>
         <div class="cart-icon" onclick="toggleCart()">
-            🛒 Кошик (<span id="cart-count">0</span>)
+            <span class="icon">🛒</span> Кошик (<span id="cart-count">0</span>)
         </div>
     </nav>
 
     <header class="hero">
-        <h1>Майбутнє догляду за волоссям</h1>
-        <p>Технології, що змінюють життя.</p>
+        <div class="hero-content">
+            <h1>Ceramic Pink <br><span>Limited Edition</span></h1>
+            <p>Ваші улюблені технології у новому ніжному кольорі.</p>
+            <a href="#products" class="btn-primary">Придбати зараз</a>
+        </div>
     </header>
 
     <main class="products-grid" id="products">
@@ -25,10 +29,12 @@
     <div id="cart-modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="toggleCart()">&times;</span>
-            <h2>Ваше замовлення</h2>
+            <h2>Ваш кошик</h2>
             <div id="cart-items"></div>
-            <div class="total">Всього: <span id="cart-total">0</span> грн</div>
-            <button class="checkout-btn">Оформити замовлення</button>
+            <div class="cart-footer">
+                <div class="total">Разом: <span id="cart-total">0</span> грн</div>
+                <button class="checkout-btn">Оформити замовлення</button>
+            </div>
         </div>
     </div>
 
