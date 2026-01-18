@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyson Store | Premium Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DYSON</div>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 Кошик (<span id="cart-count">0</span>)
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Майбутнє догляду за волоссям</h1>
+        <p>Технології, що змінюють життя.</p>
+    </header>
+
+    <main class="products-grid" id="products">
+        </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Ваше замовлення</h2>
+            <div id="cart-items"></div>
+            <div class="total">Всього: <span id="cart-total">0</span> грн</div>
+            <button class="checkout-btn">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
