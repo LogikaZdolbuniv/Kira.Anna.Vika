@@ -112,3 +112,9 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     width: 100%; background: var(--pink); border: none; padding: 15px; 
     border-radius: 10px; margin-top: 20px; font-weight: bold; cursor: pointer; 
 }
+
+.foot {
+    color: white;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
