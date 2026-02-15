@@ -115,6 +115,7 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
 
 .foot {
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     font-family: 'Inter', sans-serif;
 }
