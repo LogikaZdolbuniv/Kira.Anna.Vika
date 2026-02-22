@@ -120,7 +120,7 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     font-family: 'Inter', sans-serif;
 }
 
-.deve a {
+.deve {
     text-decoration: none;
     color: var(--soft-pink);
     font-size: 14px;
@@ -132,7 +132,7 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     transition: all 0.4s ease;
 }
 
-.deve a:hover {
+.deve:hover {
     color: var(--white);
     border-color: var(--pink);
     background: rgba(242, 193, 193, 0.1); /* Легкий рожевий фон */
