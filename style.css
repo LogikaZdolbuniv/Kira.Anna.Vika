@@ -119,3 +119,10 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     justify-content: space-between;
     font-family: 'Inter', sans-serif;
 }
+
+.deve {
+     cursor: pointer; 
+    color: var(--soft-pink); 
+    font-weight: 400;
+    transition: 0.3s;
+}
