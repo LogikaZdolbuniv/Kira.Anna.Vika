@@ -1,0 +1,138 @@
+/* Основні налаштування */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff0f3; /* Дуже світлий рожевий для фону */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+}
+
+/* Картка профілю */
+.about-card {
+    display: flex;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 20px 20px 60px #d9b3bb, -20px -20px 60px #ffffff;
+    margin: 20px;
+}
+
+/* Контейнер для фото */
+.image-container {
+    flex: 1;
+    background-color: #1a1a1a;
+    min-width: 350px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(20%);
+    transition: 0.5s;
+}
+
+.image-container img:hover {
+    filter: grayscale(0%);
+}
+
+/* Контентна частина */
+.content {
+    flex: 1.2;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #ff85a2; /* Акцентний рожевий */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    color: #1a1a1a;
+}
+
+h1 span {
+    color: #ffb3c1; /* Світло-рожевий для прізвища */
+}
+
+p {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Статистика */
+.stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Кнопки */
+.cta-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-black {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.btn-black:hover {
+    background: #ff85a2;
+}
+
+.btn-outline {
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+}
+
+.btn-outline:hover {
+    background: #ffe5ec;
+}
+
+/* Адаптивність для мобілок */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+    }
+    .content {
+        padding: 40px 30px;
+    }
+}
