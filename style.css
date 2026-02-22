@@ -121,8 +121,9 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
 }
 
 .deve {
-     cursor: pointer; 
-    color: var(--soft-pink); 
+    cursor: pointer; 
+    color: light-pink;
     font-weight: 400;
     transition: 0.3s;
+    text-decoration: none;
 }
