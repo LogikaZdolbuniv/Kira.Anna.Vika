@@ -134,22 +134,28 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     justify-content: space-between;
     font-family: 'Inter', sans-serif;
 }
-
-.deve a{
-    text-decoration: none;
-    color:  #ff85a2;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.deve {
     padding: 8px 16px;
     border: 1px solid transparent;
     border-radius: 20px;
     transition: all 0.4s ease;
 }
 
+.deve a {
+    text-decoration: none;
+    color: var(--pink);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
 .deve:hover {
-    color: var(--white);
     border-color: var(--pink);
-    background: rgba(242, 193, 193, 0.1); /* Легкий рожевий фон */
+    background: rgba(242, 193, 193, 0.1);
     box-shadow: 0 0 15px rgba(242, 193, 193, 0.3);
+}
+
+.deve:hover a {
+    color: var(--white);
 }
