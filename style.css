@@ -79,7 +79,7 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     border-color: var(--pink); 
 }
 
-.product-card img { \
+.product-card img { 
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px; 
