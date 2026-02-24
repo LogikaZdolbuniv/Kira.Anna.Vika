@@ -135,7 +135,7 @@ body { background-color: var(--black); color: var(--white); scroll-behavior: smo
     font-family: 'Inter', sans-serif;
 }
 
-.deve {
+a.deve {
     text-decoration: none;
     color: var(--pink);
     font-size: 14px;
